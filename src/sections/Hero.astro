@@ -2,54 +2,40 @@
     <!-- <img src="/hero_04.jpg" id="parrallax-hero" alt="Imagen de graduación" /> -->
 </div>
 <br>
-<section
-    class="greater-desktop:h-screen desktop:h-[670px] h-[670px] hero-section desktop:w-full w-full flex justify-center items-center bg-fixed bg-hero-pattern bg-cover bg-no-repeat bg-center"
->
-    <div
-        class="info-hero z-50 flex flex-col justify-center items-center absolute text-center mx-auto greater-desktop:max-w-3xl desktop:max-w-xl max-w-80 h-[670px]"
-    >
+<section class="hero-section flex justify-center items-center bg-fixed bg-hero-pattern bg-cover bg-no-repeat bg-center">
+    <div class="info-hero z-50 flex flex-col justify-center items-center absolute text-center mx-auto max-w-full h-full p-4">
         <div>
-            <span
-                class="date-hero w-full table text-2xl desktop:text-xl greater-desktop:text-2xl text-color02 mb-12 font-rubik font-semibold"
-            >
-                28.11.2024 | 30.11.2024
+            <span class="date-hero w-full table text-2xl mb-6  font-semibold text-color02 font-dancing-script">
+                Invitación
             </span>
-        
-            <h1 class="custom-hero border-b-[1px] pb-8 border-b-white text-6xl greater-desktop:text-8xl text-color02 font-dancing-script flex flex-col">
+
+            <h1 class="custom-hero border-b pb-4 border-b-white text-5xl md:text-6xl lg:text-8xl text-color02 font-dancing-script">
                 Ivan Josue Quenta Vargas
             </h1>
-            
-            <div
-                class="text-center flex justify-center items-center flex-col mt-7 gap-5"
-            >
-                <!-- <img src="/graduation-icon.svg" class="w-16" alt="Ícono de graduación" /> -->
 
-                <h2 class="font-dancing-script text-3xl greater-desktop:text-5xl font-rubik text-color02">
+            <div class="text-center flex flex-col mt-5 gap-4">
+                <h2 class="font-dancing-script text-3xl md:text-4xl lg:text-5xl text-color02">
                     Licenciado en Informática
                 </h2>
 
-                <h3 class="font-dancing-script text-xl greater-desktop:text-2xl text-color02">
-                    Mención: Ingenieria en Sistemas Informáticos
+                <h3 class="font-dancing-script text-lg md:text-xl lg:text-2xl text-color02">
+                    Mención: Ingeniería en Sistemas Informáticos
                 </h3>
-                
-                <h3 class="font-dancing-script text-xl greater-desktop:text-2xl font-rubik text-color02 max-w-2xl px-4">
-                    Después de años de esfuerzo, dedicación y pasión por la tecnología, he alcanzado un hito 
-                    significativo en mi carrera profesional. Cada línea de código, cada proyecto y cada desafío me han
-                    transformado en el profesional que soy hoy.
+
+                <h3 class="font-dancing-script text-lg md:text-xl lg:text-2xl text-color02 max-w-full px-2">
+                    Tras años de esfuerzo y pasión por la tecnología, he alcanzado un hito importante en mi carrera. Cada proyecto y desafío me han moldeado como profesional.
                 </h3>
-                
-                <div class="flex items-center gap-4">
-                    <img src="/mark_open.svg" class="w-10" alt="Comillas de apertura" />
+
+                <div class="flex items-center justify-center gap-4">
                     <span class="italic text-lg text-color02">
                         "Pon en manos del Señor todas tus obras, y tus proyectos se cumplirán." Proverbios 16:3
                     </span>
-                    <img src="/mark_close.svg" class="w-10" alt="Comillas de cierre" />
                 </div>
             </div>
         </div>
-        
+
         <div class="flex justify-center mt-8 items-center animate-bounce">
-            <!-- <img src="/down-arrow.gif" class="w-14 desktop:w-20" alt="Flecha hacia abajo" /> -->
+            <!-- <img src="/down-arrow.gif" class="w-14 md:w-20" alt="Flecha hacia abajo" /> -->
         </div>
     </div>
 </section>
@@ -63,47 +49,46 @@
         top: 0.7em;
         width: 25%;
     }
+
     #parrallax-hero {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        height: 725px;
+        height: 100%;
         object-fit: cover;
+    }
 
+    .hero-section {
+        height: 100vh; /* Cambiar a vh para que ocupe toda la pantalla */
     }
 
     .hero-section::before {
         content: "";
         position: absolute;
         width: 100%;
-        height: 725px;
-        background-color: rgba(29, 29, 27, 0.2);
+        height: 100%;
+        background-color: rgba(29, 29, 27, 0.2); /* Aumentar opacidad para mejor contraste */
         z-index: 0;
-        top: 0;
-        left: 0;
     }
+
+    @media (min-width: 768px) {
+        .info-hero {
+            padding: 0; /* Quitar padding en pantallas más grandes */
+        }
+    }
+
     @media (min-width: 993px) {
         #parrallax-hero {
-            height: 725px;
-        }
-        .hero-section::before {
-            height: 725px;
+            height: auto; /* Ajustar altura automáticamente */
         }
     }
-    @media (min-width: 1745px) {
-        #parrallax-hero {
-            height: 100vh;
-        }
-        .hero-section::before {
-            height: 100vh;
-        }
-    }
+
     @keyframes fadeIn {
         from { opacity: 0; transform: translateY(20px); }
         to { opacity: 1; transform: translateY(0); }
     }
-    
+
     .custom-hero, .date-hero, .info-hero h2, .info-hero h3 {
         animation: fadeIn 1.5s ease-out;
     }
