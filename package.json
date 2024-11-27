@@ -10,8 +10,20 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.16.16",
     "@astrojs/check": "^0.9.4",
+    "@astrojs/tailwind": "^5.1.2",
+    "@fontsource-variable/raleway": "^5.1.0",
+    "@fontsource-variable/rubik": "^5.1.0",
+    "@fontsource/dancing-script": "^5.1.0",
+    "@fontsource/great-vibes": "^5.1.0",
+    "@fontsource/parisienne": "^5.1.0",
+    "@fontsource/playfair-display": "^5.1.0",
+    "@fontsource/raleway": "^5.1.0",
+    "@fontsource/rubik": "^5.1.0",
+    "@midudev/tailwind-animations": "^0.1.0",
+    "@nextui-org/react": "^2.4.8",
+    "astro": "^4.16.16",
+    "tailwindcss": "^3.4.15",
     "typescript": "^5.7.2"
   }
 }

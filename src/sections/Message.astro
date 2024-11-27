@@ -1,0 +1,50 @@
+---
+import MessageCard from "@/components/MessageCard.astro";
+import Divider from "@/components/Divider.astro";
+import Title from "@/components/Title.astro";
+---
+
+<section>
+    <div
+        class="max-w-[1140px] phone:w-full phone:px-2 mx-auto mb-12 mt-12 desktop:mb-14 desktop:mt-24 text-color01 flex gap-3 justify-center items-center flex-col"
+    >
+        <Title title="Celebración Académica" />
+        <span
+            class="font-rubik desktop:text-xl text-center font-extralight text-gray-400"
+        >
+            Un sueño cumplido, un camino recorrido
+        </span>
+        <!-- <img src="/graduation-icon.gif" class="w-28 mx-auto" title="Ícono de graduación" /> -->
+    </div>
+    <div
+        class="max-w-[1140px] flex flex-row flex-wrap gap-8 desktop:gap-4 mx-auto justify-center items-center"
+    >
+        <MessageCard
+            person="Agradecimiento a Dios"
+            message={`
+                Primero, doy gracias a Dios por ser mi guía, mi fortaleza y mi luz en este camino académico. Cada 
+                desafío, cada logro, cada momento difícil y cada triunfo lo atribuyo a Su gracia infinita. Él me dio la 
+                sabiduría, la perseverancia y la determinación para alcanzar este sueño.`
+                }
+            image="versiculo.jpg"
+        />
+
+        <MessageCard
+            person="Familia y Apoyo"
+            message={`
+                A mi familia, que ha sido mi pilar fundamental: gracias por su amor incondicional, por cada sacrificio, 
+                por creer en mí. A mis padres, que me enseñaron el valor del trabajo duro y la educación. A mis hermanos
+                , que siempre estuvieron a mi lado. A mis amigos, que fueron mi segunda familia
+                durante esta travesía académica, compartiendo desvelos, proyectos y momentos inolvidables.`
+                }
+            image="familia.jpg"
+        />
+
+        <!-- <MessageCard
+            person="Mi Camino Profesional"
+            message={`Este logro representa más que un título. Es el resultado de años de dedicación, noches de estudio, proyectos desafiantes y una pasión por la tecnología y los sistemas. Como Licenciado en Informática, me comprometo a seguir aprendiendo, innovando y contribuyendo al mundo de la tecnología. Cada línea de código, cada proyecto, cada desafío me ha preparado para los retos profesionales que vienen.`}
+            image="hero_04.jpg"
+        /> -->
+    </div>
+    <Divider />
+</section>

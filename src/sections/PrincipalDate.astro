@@ -1,0 +1,107 @@
+---
+import Divider from "@/components/Divider.astro";
+---
+
+<section 
+    class="max-w-6xl desktop:mx-auto mx-4 text-center flex gap-20 desktop:gap-10 flex-wrap justify-center items-center py-12"
+>
+    {/* Ceremony Section */}
+    <div class="desktop:w-[45%] bg-white/5 p-6 rounded-xl shadow-sm transition-all hover:shadow-md">
+        <div class="title-pd border-b-2 border-color01 pb-4 mb-6">
+            <h3 class="font-dancing-script text-5xl text-color01 mb-2">Acto de Colación</h3>
+            <p class="font-dancing-script text-2xl text-gray-600">Entrega de Título y Diploma</p>
+        </div>
+        
+        <ul class="space-y-6">
+            <li class="flex flex-col items-center text-center">
+                <p class="text-2xl text-[#6F6F6E] font-semibold mb-2">Día</p>
+                <span class="text-xl font-normal text-[#C6C6C5] flex items-center gap-2">
+                    <span class="text-3xl">📅</span> Jueves 28 de Noviembre - 13:45 PM
+                </span>
+                <a
+                    data-id="NL21835056"
+                    href="https://www.addevent.com/event/Vc23982424"
+                    target="_blank"
+                    class="mt-4 inline-block bg-color01 text-color02 px-6 py-3 rounded-full hover:bg-opacity-80 transition-colors"
+                >
+                    Agendar Evento
+                </a>
+            </li>
+            
+            <li class="flex flex-col items-center text-center">
+                <p class="text-2xl text-[#6F6F6E] font-semibold mb-2">Lugar</p>
+                <span class="text-xl font-normal text-[#C6C6C5] flex items-center gap-2">
+                    <span class="text-3xl">🏫</span> Paraninfo Universitario - UMSA
+                </span>
+            </li>
+            
+            <li class="flex flex-col items-center text-center">
+                <p class="text-2xl text-[#6F6F6E] font-semibold mb-2">Dirección</p>
+                <span class="text-xl font-normal text-[#C6C6C5] mb-4">
+                    Monoblock Central UMSA, La Paz
+                </span>
+                <a 
+                    href="https://maps.app.goo.gl/pbHNxkarLCYY54QM9" 
+                    target="_blank" 
+                    class="inline-block bg-color01 text-color02 px-6 py-3 rounded-full hover:bg-opacity-80 transition-colors"
+                >
+                    🗺️ Ver Mapa
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    {/* Party Section */}
+    <div class="desktop:w-[45%] bg-white/5 p-6 rounded-xl shadow-sm transition-all hover:shadow-md">
+        <div class="title-pd border-b-2 border-color01 pb-4 mb-6">
+            <h3 class="font-dancing-script text-5xl text-color01 mb-2">Fiesta de Celebración</h3>
+        </div>
+        
+        <ul class="space-y-6">
+            <li class="flex flex-col items-center text-center">
+                <p class="text-2xl text-[#6F6F6E] font-semibold mb-2">Día</p>
+                <span class="text-xl font-normal text-[#C6C6C5] flex items-center gap-2">
+                    <span class="text-3xl">📅</span> Sábado 30 de Noviembre - 15:00 PM
+                </span>
+            </li>
+            
+            <li class="flex flex-col items-center text-center">
+                <p class="text-2xl text-[#6F6F6E] font-semibold mb-2">Lugar</p>
+                <span class="text-xl font-normal text-[#C6C6C5] flex items-center gap-2">
+                    <span class="text-3xl">⛪</span> Iglesia Rios de Agua Viva
+                </span>
+            </li>
+            
+            <li class="flex flex-col items-center text-center">
+                <p class="text-2xl text-[#6F6F6E] font-semibold mb-2">Dirección</p>
+                <span class="text-xl font-normal text-[#C6C6C5] mb-4">
+                    Av. German Busch 3134, El Alto
+                </span>
+                <a 
+                    href="https://maps.app.goo.gl/dTfYG2wEHsqHBhjLA" 
+                    target="_blank" 
+                    class="inline-block bg-color01 text-color02 px-6 py-3 rounded-full hover:bg-opacity-80 transition-colors"
+                >
+                    🗺️ Ver Mapa
+                </a>
+
+            </li>
+        </ul>
+    </div>
+</section>
+
+<Divider />
+
+<script 
+    type="text/javascript" 
+    src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js" 
+    async 
+    defer
+></script>
+
+<style>
+    /* Tailwind-like custom styles */
+    .title-pd {
+        @apply border-color01;
+    }
+</style>
